@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-30T23:01:21 IST" name="Default suite" finished-at="2026-03-30T23:01:30 IST" duration-ms="9225">
+  <suite started-at="2026-03-31T12:34:28 IST" name="Default suite" finished-at="2026-03-31T12:34:35 IST" duration-ms="6285">
     <groups>
     </groups>
-    <test started-at="2026-03-30T23:01:21 IST" name="Default test" finished-at="2026-03-30T23:01:30 IST" duration-ms="9225">
+    <test started-at="2026-03-31T12:34:28 IST" name="Default test" finished-at="2026-03-31T12:34:35 IST" duration-ms="6285">
       <class name="tests.AuthTest">
-        <test-method signature="login()[pri:1, instance:tests.AuthTest@49049a04]" started-at="2026-03-30T23:01:21 IST" name="login" finished-at="2026-03-30T23:01:27 IST" duration-ms="5871" status="PASS">
+        <test-method signature="login()[pri:1, instance:tests.AuthTest@16293aa2]" started-at="2026-03-31T12:34:28 IST" name="login" finished-at="2026-03-31T12:34:32 IST" duration-ms="3262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyOtp()[pri:2, instance:tests.AuthTest@49049a04]" started-at="2026-03-30T23:01:27 IST" name="verifyOtp" finished-at="2026-03-30T23:01:29 IST" duration-ms="1878" status="PASS">
+        <test-method signature="verifyOtp()[pri:2, instance:tests.AuthTest@16293aa2]" started-at="2026-03-31T12:34:32 IST" name="verifyOtp" finished-at="2026-03-31T12:34:33 IST" duration-ms="1662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOtp -->
-        <test-method signature="refreshToken()[pri:3, instance:tests.AuthTest@49049a04]" started-at="2026-03-30T23:01:29 IST" name="refreshToken" finished-at="2026-03-30T23:01:30 IST" duration-ms="1411" status="PASS">
+        <test-method signature="refreshToken()[pri:3, instance:tests.AuthTest@16293aa2]" started-at="2026-03-31T12:34:33 IST" name="refreshToken" finished-at="2026-03-31T12:34:35 IST" duration-ms="1328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- refreshToken -->

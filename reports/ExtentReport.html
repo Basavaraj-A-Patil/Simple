@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">API Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 30, 2026 11:01:20 pm</span></a>
+<a href="#"><span class="badge badge-primary">Mar 31, 2026 12:34:28 pm</span></a>
 </li>
 </ul>
 </div>
@@ -81,7 +81,7 @@
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>11:01:21 pm</span> / <span>00:00:05:870</span>
+              <span>12:34:28 pm</span> / <span>00:00:03:261</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,9 +90,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">login</h5>
-<span class='badge badge-success'>03.30.2026 11:01:21 pm</span>
-<span class='badge badge-danger'>03.30.2026 11:01:27 pm</span>
-<span class='badge badge-default'>00:00:05:870</span>
+<span class='badge badge-success'>03.31.2026 12:34:28 pm</span>
+<span class='badge badge-danger'>03.31.2026 12:34:32 pm</span>
+<span class='badge badge-default'>00:00:03:261</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,22 +105,22 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:01:21 pm</td>
+        <td>12:34:28 pm</td>
         <td>
           Calling API: login
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:01:21 pm</td>
+        <td>12:34:28 pm</td>
         <td>
           REQUEST:
-{ query: mutation Login($mobile: String!, $whatsappConsent: Boolean!, $loginSource: loginSource) { login(mobile: $mobile, whatsappConsent: $whatsappConsent, loginSource: $loginSource) { success message errors { errorCode message statusCode } } }, variables: {whatsappConsent=true, mobile=+919071571067, loginSource=MOBILE} }
+{ query: mutation Login($mobile: String!, $whatsappConsent: Boolean!, $loginSource: loginSource) { login(mobile: $mobile, whatsappConsent: $whatsappConsent, loginSource: $loginSource) { success message errors { errorCode message statusCode } } }, variables: {mobile=+919071571067, loginSource=MOBILE, whatsappConsent=true} }
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:01:26 pm</td>
+        <td>12:34:31 pm</td>
         <td>
           RESPONSE:
 {
@@ -136,7 +136,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:01:27 pm</td>
+        <td>12:34:32 pm</td>
         <td>
           Test Passed
         </td>
@@ -153,7 +153,7 @@
           <div class="test-detail">
             <p class="name">verifyOtp</p>
             <p class="text-sm">
-              <span>11:01:27 pm</span> / <span>00:00:01:879</span>
+              <span>12:34:32 pm</span> / <span>00:00:01:663</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -162,9 +162,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">verifyOtp</h5>
-<span class='badge badge-success'>03.30.2026 11:01:27 pm</span>
-<span class='badge badge-danger'>03.30.2026 11:01:29 pm</span>
-<span class='badge badge-default'>00:00:01:879</span>
+<span class='badge badge-success'>03.31.2026 12:34:32 pm</span>
+<span class='badge badge-danger'>03.31.2026 12:34:33 pm</span>
+<span class='badge badge-default'>00:00:01:663</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -177,22 +177,22 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:01:27 pm</td>
+        <td>12:34:32 pm</td>
         <td>
           Calling API: verifyOtp
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:01:27 pm</td>
+        <td>12:34:32 pm</td>
         <td>
           REQUEST:
-{ query: mutation VerifyOtp($mobile: String!, $otp: String!) { verifyOtp(mobile: $mobile, otp: $otp) { success message data { accessToken refreshToken userId }  errors { errorCode message statusCode } } }, variables: {mobile=+919071571067, otp=3289} }
+{ query: mutation VerifyOtp($mobile: String!, $otp: String!) { verifyOtp(mobile: $mobile, otp: $otp) { success message data { accessToken refreshToken userId }  errors { errorCode message statusCode } } }, variables: {otp=3289, mobile=+919071571067} }
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:01:28 pm</td>
+        <td>12:34:33 pm</td>
         <td>
           RESPONSE:
 {
@@ -201,8 +201,8 @@
             "success": true,
             "message": "OTP verified and user logged in successfully.",
             "data": {
-                "accessToken": "eyJraWQiOiI2ZXdha3Jlb0ZkNE1ySjZkZWd1bW9WSWFkR1kzRFVhY01jc0NiNTVSWEVrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NGQ4MTRiOC00MGQxLTcwN2QtZjljNC1mMDJkNzA3NjgzY2YiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9hZmRwRGFpYXQiLCJjbGllbnRfaWQiOiIxZDR2bnVlbGF0YWRvcWJjdmgxbXZjN3BtYyIsIm9yaWdpbl9qdGkiOiJjNTM2Njc5Mi1iNzExLTQ2NWYtYmFjMS1hMzFhMTA4NDlhMGIiLCJldmVudF9pZCI6ImIxNjU4YzhlLWU2MzgtNDNjZS04YTU5LTA2NGM0MGFjZTJmNCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NzQ4OTE4ODgsImV4cCI6MTc3NDg5MjE4OCwiaWF0IjoxNzc0ODkxODg4LCJqdGkiOiIwZmUxNjg1Yy1iZGU1LTQ5N2YtYTFmNC03MDJjOTBhNWU0MmEiLCJ1c2VybmFtZSI6Ijk0ZDgxNGI4LTQwZDEtNzA3ZC1mOWM0LWYwMmQ3MDc2ODNjZiJ9.qhc3_kyGO36bSxYdWczYEExR3V3SsjlEf7v7B5TRhtnFUJVbUEMK3Jo6Y-HnYsFMh1weCRnPHndXRehcMiH7c47vSAR_i1gBsLCqFYfP0j6kfwZAMfVwaX2Dqu7t3SVGOxwe2-9Ntd4KoFqhtqSoMfrzrlGOnxQua-KPcZ12JZ4KMAZNXWXUqJ_06atgvgywSP1bDotQFuY2c9ygMU7AdyHyLsGGRttmdaar1mbj375bUOi3a6gNu-3VOodL1h7imh3uvGUgPIBXm-3u7dQsikw_5vXBh4WfZuO5xmgZ43NYgET2hvPJc2dZwp5Ap-YeBdMGLqRe27BE6Bk9KPMZRg",
-                "refreshToken": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.rLsL0twP-9_iGvlkc-PT8a48UAcjg4X4QXorfGcdBQspYB57BBObr3Fg8rf242OmwLd6gbYBEQ6goT9rZ4bPIZkLsQxzquwLvzk6roLxmPeEzSBJrixYzyFnt6U1yOrdd5x4XUEsQZo2Yuai09H--f_Hd9o2U3RVXKQBPzcwO5ZbDKZKtZ6dCfdH3fDHpkdHg06L-Cowo-17LcfNpD9RV8qxSXjRMjz-YaIeD1N5VsGN7bBt4Q9wef095bvTNXLLsIsG62sgIk8MLqr0Qzft6JndGBZx2bvCBvjf0AEj4jHpqsMf0xw6W_iS4SVExsJLGmthXgEg1pqBtdGh3XYAow._ef754bEFUv-2beX.njdFq86KNfe8H6aDGTwStEqbevrQH00aT0drUmssYiwn_6fNdCOiLkeHDrghvoskFCHSqfOO8XQDXC62OVJsA2PiDvLScT2PoYx-C6aDIWct6_ScXRXGYHtOUNAJ56R_vYdBb6r5SPhnUCFxx5JMUSDJkCEg_ijhj-1dNGyMUsn1Aevivz_OLQ3q0-6wKi95na_AMeDhMTOFnA2bLaEQ-QfIw6lW3QIxAm6M-Zqaod90mclpODUIhrtJO-7yxEcePjT2fLixLDWF32MEfsR-94rPf-1iB54umq-AOLpsUJXKyAuHJedA65SivylEh9k6MWCPPWguiLEPp8sZ2cZMRZ1oDdQRV0K7fb7sVodK8sFeBp9wu2vkFQJBFxDJKVgqr4aQiR_JaYknBlr5LoOk5YkemRq-L4Iuk6GH4ZxJTMxxQxljamIV0mELVydhB3RO8pjyBoTmhYbbN1HVcdgzvTlZfsS1GgQ0rKZnpD4aJ7T9GHH9C0Il9Px2YljbIxPyHTO08KxWNIGuftvKlm9oyKiH1TbZMGepCBqgsKqip1uq3ooeiDIOEW03Q6dRN3QtSQecShrt7nITO7ls8GlWNS-eaSMwXHmlMwLbgdA1UegWqBZn5C4Al3idXndpnDSJcC3Eq176JUYIDEd-r_ZGlS6RwkXT3u44FyagUhbBGgdKkWZzw5-GmixzmuBM47qOmYwBRdCkQWcZGoA1E2g6HKM7yu9pHyHdZ-g8H-dn0ehZUOP3SL1NV1Yx5m3m2rDQltmzyPcdgW31hxBU4in1dKb5gfPvyKCwuTWixaADCDBZGIzNHXI7jMTGPGGZNwXi7TZWhsZQFQtjbZCYow3Hvarup5Q-FWS1tW8ErXMtgdIrE6-ukLprdv9GeZvQIM0OmuOBK6uA6mPkvL8WS6QztSw6BtLheVXCfJji_eyqcuCA8EnQjqi5A7VGgkSo5i0RQU83HCrHD72_MK-7XjiShH6Zle3UPABSe1c86ezsVkAuXNE-5zzw54Ys8wwtBbZz5BxWQYEDh1QGJoR2hPDmAqaOsKHVtCAdGuXsKv798zFMFRu2qSID9MQfAS2dOFbWvmhA8TkJm_n-HTvZroWBakhnNjhY5YfdGECL6J1GwJxJ27vH89fED6g5bucvEPRjnMrFz5JA-E9QMIhqThZLaNiFtUndB3guvCAWsqBtUKTEko43eJS1MSSzxTF8qSARPiBlTyVoK6uPx-w_p85NqQM5es0r2MRvzQTbNNM1nQWJFvckJRZIV5YLRMb_udprO0QK4ZNJ56wn5La6PcFAbOmX93NgVqWQ0c4trqmGI-Bw-i21iZM04hU2XV4.JdRg6Qyem29WQWQ9K6qlcQ",
+                "accessToken": "eyJraWQiOiI2ZXdha3Jlb0ZkNE1ySjZkZWd1bW9WSWFkR1kzRFVhY01jc0NiNTVSWEVrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NGQ4MTRiOC00MGQxLTcwN2QtZjljNC1mMDJkNzA3NjgzY2YiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9hZmRwRGFpYXQiLCJjbGllbnRfaWQiOiIxZDR2bnVlbGF0YWRvcWJjdmgxbXZjN3BtYyIsIm9yaWdpbl9qdGkiOiI5OGVhMGM0OC00MTU2LTQyODItOGEwMC0xZmMwYTQwMTYyODUiLCJldmVudF9pZCI6IjVhMTU5NWMzLWExZGQtNDlhYi1iYzRhLTg2MWZjNTJiMGMyNCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NzQ5NDA2NzMsImV4cCI6MTc3NDk0MDk3MywiaWF0IjoxNzc0OTQwNjczLCJqdGkiOiI5YzU0ZWQ1MS01NWFjLTRmNGYtYmIzMi02OWY0NzI1MmNiNjEiLCJ1c2VybmFtZSI6Ijk0ZDgxNGI4LTQwZDEtNzA3ZC1mOWM0LWYwMmQ3MDc2ODNjZiJ9.FgS0Zr3cSy0WL9GaPYzsOocNiARi9mvRig2EfcNBQwlDpfyyvHPYx1liw2ktyl7qxcQHA2FxHMxybsAeh72ba3oeNZJ0RhG-ZMrUivQjkDZ4U0SD8GpZSkifjRnbxMilcpIyjJLAfVr7j8_zQhNIR4GABbuSaYqbdTDm6d3wPC6HgDqjj5Cm1pVsBF7AH3wzqpxDefGpPYi7GrzHGF6iCsqRp6Qqou4ZF_d6Gqfbb9WxYOMJHa1QfQ0eK6wFQVpN7xU_wRxmS1bmPmbAieTvyKFdS52G61WS83sOqErBZDaOp17oGB0VKfJT-YnezT6ZRQi507lpc3mTTscaL2Xy6A",
+                "refreshToken": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.SmRWj5ZkEG_YjiDziSmOVqdBqxjIxArO9G_DNet4Ily9SWQX3fpnLKbCjXXHRc5PldCKtjuVXFJgKdAt7lQ2vX0e25tRV7mHHzhJBOXQWaNK6Q3fkh6em5hl9zCHaxQEFkIFUN3X4o4CzgffgUsC5S92Dk-N6uJeEPVL9ZfyijDxPg3JKaqYcZUDOein8nf3FbxszTrgdHko8R0fa8vLAyo_w3GiYPtHZyCDaEh3jdIITfHnXu-Gof9QwnuT_GQ819r5wfuhKjIURJw2gSRjqT3I_90ICKzZBHgLd2Ki13Bob7NPbAvbg3EOHnavt4GUuxJB2kie-dWen7N5IRl0Jg.KpbVQxbPRYDSrcvZ.3EUI2l9sM0-8XkpYsksljPtxHbtVytCFyAi6-Yyxjn4VmKOGisZTyhsvFv_-sM_dWAQKIhNNlrn4sMFNDb0fbXlHin14V_D9l4YWcB_JNlKbfobB1zdkefKwJ62e3vYmt0AHTRKQNBAZYWnaMYvegqLvab8id4PUDC_kcasCCDCskVpMBRFVZofopD4zTzVTHYMorUKke4PKQCLgANrC_YVa0umBd4Uf3UFDLwiWoe-SsB03sHXDsnorG38azk8k9mucABtxhAqmzEyeXPWxbqw-xlAIcngxkDWAwjhg0U7PxsGTqliyD2p4Crgq2iQr6haMlLr1pWHzs_RyX998M1OoOkyuFhBdK_SFbyxB9ehjcjUP8ROnrjcAfHrPXE361CyljFvT0A6FJH_-DIiVjFCcKqopR3WFufJcjCYoHTtJOHbJtt7cM9xurgPg3DVvvkFanJOy1RPouJUZcrsmDyxndXJvOiovr9Nf8sHskIy1pVUxG-EN88IqntcPOLgmP60GHHYMq3IYnvNlbmsqjIB95NjtZjqysFCzZHGoqIRc0wDcjyWO78EDERAaCxfDQjz9-ldnxI_Eniq3K5mjgXO81kD5f-GDmll47y2qhCcRKL81TiL5tU8QnavetkSomczGUTBTecr7Kqquyo-KNmBz8VXijQKBp2xY-vR-HayAMqum2mpCih2Xsc5_2l2kLupGPXdANC38N2jqnnT9YUtOC0NfWJhESnOG8N9UAOAtEpvjXkqTI8qkZoYcocG5-SUtSjlxRsHK0uRDZEIy9VXuRB0QNBhU5-fPpO1qUWyTos5klYmSRbJO5f4_RJnEhObbnG0pWL6V82PuQR3_dwVKRvjpySUiDaPMJnKaa8CbHO-iLt0KIrgfoX8DwqkB6c_Prfy5D7fFtHogJo2JFPgD-nV5Jn8pZmId8uaC-K2vZ9Xoh_YGGn1lMiRGf2AR27_KBoBHzKNV5OeM9CZQ62qeMPb_n379ZhNtRLH9qk2UWY4J3KYuZ0VcDgxVeKRUyW4ee9e0svLCAMevsEY-F8QN7SwA8SY4OxJRguKm0hHNIOQM067MsMUFea39fF3VzW_VMx9_Ztv0HNXbT53_0esMxRmsog6821MqyUrSIZkkVLqBHDHgQpyAOqdkhiG20DA2s2mApnC-2vgLCWlsf20myxQ3oR7cfJnUUEnzix4HKDuBbaF1Zo9KDS4G7bjWN2IdxphaJvA7RfHgXFjgIwdyCvuA52lWjj56nBV43lBhHQw2yRrsM53xwsWCL3yse8J36HQpSLYsTJn1sVbWxJkbkM6AvnmUPOxn_xfP6PHErMC7V-t-rZiLAKw.wKc_fQloSZhRrqADLmmREg",
                 "userId": "c49f1cd9-9a4c-49d7-a517-18d6da5215af"
             },
             "errors": null
@@ -213,7 +213,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:01:29 pm</td>
+        <td>12:34:33 pm</td>
         <td>
           Test Passed
         </td>
@@ -230,7 +230,7 @@
           <div class="test-detail">
             <p class="name">refreshToken</p>
             <p class="text-sm">
-              <span>11:01:29 pm</span> / <span>00:00:01:413</span>
+              <span>12:34:33 pm</span> / <span>00:00:01:330</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -239,9 +239,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">refreshToken</h5>
-<span class='badge badge-success'>03.30.2026 11:01:29 pm</span>
-<span class='badge badge-danger'>03.30.2026 11:01:30 pm</span>
-<span class='badge badge-default'>00:00:01:413</span>
+<span class='badge badge-success'>03.31.2026 12:34:33 pm</span>
+<span class='badge badge-danger'>03.31.2026 12:34:35 pm</span>
+<span class='badge badge-default'>00:00:01:330</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -254,22 +254,22 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:01:29 pm</td>
+        <td>12:34:33 pm</td>
         <td>
           Calling API: refreshToken
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:01:29 pm</td>
+        <td>12:34:33 pm</td>
         <td>
           REQUEST:
-{ query: mutation RefreshToken($refreshToken: String!, $userId: String!) { refreshToken(refreshToken: $refreshToken, user_id: $userId) { success message data { accessToken refreshToken }  errors { errorCode message statusCode } } }, variables: {userId=c49f1cd9-9a4c-49d7-a517-18d6da5215af, refreshToken=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.rLsL0twP-9_iGvlkc-PT8a48UAcjg4X4QXorfGcdBQspYB57BBObr3Fg8rf242OmwLd6gbYBEQ6goT9rZ4bPIZkLsQxzquwLvzk6roLxmPeEzSBJrixYzyFnt6U1yOrdd5x4XUEsQZo2Yuai09H--f_Hd9o2U3RVXKQBPzcwO5ZbDKZKtZ6dCfdH3fDHpkdHg06L-Cowo-17LcfNpD9RV8qxSXjRMjz-YaIeD1N5VsGN7bBt4Q9wef095bvTNXLLsIsG62sgIk8MLqr0Qzft6JndGBZx2bvCBvjf0AEj4jHpqsMf0xw6W_iS4SVExsJLGmthXgEg1pqBtdGh3XYAow._ef754bEFUv-2beX.njdFq86KNfe8H6aDGTwStEqbevrQH00aT0drUmssYiwn_6fNdCOiLkeHDrghvoskFCHSqfOO8XQDXC62OVJsA2PiDvLScT2PoYx-C6aDIWct6_ScXRXGYHtOUNAJ56R_vYdBb6r5SPhnUCFxx5JMUSDJkCEg_ijhj-1dNGyMUsn1Aevivz_OLQ3q0-6wKi95na_AMeDhMTOFnA2bLaEQ-QfIw6lW3QIxAm6M-Zqaod90mclpODUIhrtJO-7yxEcePjT2fLixLDWF32MEfsR-94rPf-1iB54umq-AOLpsUJXKyAuHJedA65SivylEh9k6MWCPPWguiLEPp8sZ2cZMRZ1oDdQRV0K7fb7sVodK8sFeBp9wu2vkFQJBFxDJKVgqr4aQiR_JaYknBlr5LoOk5YkemRq-L4Iuk6GH4ZxJTMxxQxljamIV0mELVydhB3RO8pjyBoTmhYbbN1HVcdgzvTlZfsS1GgQ0rKZnpD4aJ7T9GHH9C0Il9Px2YljbIxPyHTO08KxWNIGuftvKlm9oyKiH1TbZMGepCBqgsKqip1uq3ooeiDIOEW03Q6dRN3QtSQecShrt7nITO7ls8GlWNS-eaSMwXHmlMwLbgdA1UegWqBZn5C4Al3idXndpnDSJcC3Eq176JUYIDEd-r_ZGlS6RwkXT3u44FyagUhbBGgdKkWZzw5-GmixzmuBM47qOmYwBRdCkQWcZGoA1E2g6HKM7yu9pHyHdZ-g8H-dn0ehZUOP3SL1NV1Yx5m3m2rDQltmzyPcdgW31hxBU4in1dKb5gfPvyKCwuTWixaADCDBZGIzNHXI7jMTGPGGZNwXi7TZWhsZQFQtjbZCYow3Hvarup5Q-FWS1tW8ErXMtgdIrE6-ukLprdv9GeZvQIM0OmuOBK6uA6mPkvL8WS6QztSw6BtLheVXCfJji_eyqcuCA8EnQjqi5A7VGgkSo5i0RQU83HCrHD72_MK-7XjiShH6Zle3UPABSe1c86ezsVkAuXNE-5zzw54Ys8wwtBbZz5BxWQYEDh1QGJoR2hPDmAqaOsKHVtCAdGuXsKv798zFMFRu2qSID9MQfAS2dOFbWvmhA8TkJm_n-HTvZroWBakhnNjhY5YfdGECL6J1GwJxJ27vH89fED6g5bucvEPRjnMrFz5JA-E9QMIhqThZLaNiFtUndB3guvCAWsqBtUKTEko43eJS1MSSzxTF8qSARPiBlTyVoK6uPx-w_p85NqQM5es0r2MRvzQTbNNM1nQWJFvckJRZIV5YLRMb_udprO0QK4ZNJ56wn5La6PcFAbOmX93NgVqWQ0c4trqmGI-Bw-i21iZM04hU2XV4.JdRg6Qyem29WQWQ9K6qlcQ} }
+{ query: mutation RefreshToken($refreshToken: String!, $userId: String!) { refreshToken(refreshToken: $refreshToken, user_id: $userId) { success message data { accessToken refreshToken }  errors { errorCode message statusCode } } }, variables: {userId=c49f1cd9-9a4c-49d7-a517-18d6da5215af, refreshToken=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.SmRWj5ZkEG_YjiDziSmOVqdBqxjIxArO9G_DNet4Ily9SWQX3fpnLKbCjXXHRc5PldCKtjuVXFJgKdAt7lQ2vX0e25tRV7mHHzhJBOXQWaNK6Q3fkh6em5hl9zCHaxQEFkIFUN3X4o4CzgffgUsC5S92Dk-N6uJeEPVL9ZfyijDxPg3JKaqYcZUDOein8nf3FbxszTrgdHko8R0fa8vLAyo_w3GiYPtHZyCDaEh3jdIITfHnXu-Gof9QwnuT_GQ819r5wfuhKjIURJw2gSRjqT3I_90ICKzZBHgLd2Ki13Bob7NPbAvbg3EOHnavt4GUuxJB2kie-dWen7N5IRl0Jg.KpbVQxbPRYDSrcvZ.3EUI2l9sM0-8XkpYsksljPtxHbtVytCFyAi6-Yyxjn4VmKOGisZTyhsvFv_-sM_dWAQKIhNNlrn4sMFNDb0fbXlHin14V_D9l4YWcB_JNlKbfobB1zdkefKwJ62e3vYmt0AHTRKQNBAZYWnaMYvegqLvab8id4PUDC_kcasCCDCskVpMBRFVZofopD4zTzVTHYMorUKke4PKQCLgANrC_YVa0umBd4Uf3UFDLwiWoe-SsB03sHXDsnorG38azk8k9mucABtxhAqmzEyeXPWxbqw-xlAIcngxkDWAwjhg0U7PxsGTqliyD2p4Crgq2iQr6haMlLr1pWHzs_RyX998M1OoOkyuFhBdK_SFbyxB9ehjcjUP8ROnrjcAfHrPXE361CyljFvT0A6FJH_-DIiVjFCcKqopR3WFufJcjCYoHTtJOHbJtt7cM9xurgPg3DVvvkFanJOy1RPouJUZcrsmDyxndXJvOiovr9Nf8sHskIy1pVUxG-EN88IqntcPOLgmP60GHHYMq3IYnvNlbmsqjIB95NjtZjqysFCzZHGoqIRc0wDcjyWO78EDERAaCxfDQjz9-ldnxI_Eniq3K5mjgXO81kD5f-GDmll47y2qhCcRKL81TiL5tU8QnavetkSomczGUTBTecr7Kqquyo-KNmBz8VXijQKBp2xY-vR-HayAMqum2mpCih2Xsc5_2l2kLupGPXdANC38N2jqnnT9YUtOC0NfWJhESnOG8N9UAOAtEpvjXkqTI8qkZoYcocG5-SUtSjlxRsHK0uRDZEIy9VXuRB0QNBhU5-fPpO1qUWyTos5klYmSRbJO5f4_RJnEhObbnG0pWL6V82PuQR3_dwVKRvjpySUiDaPMJnKaa8CbHO-iLt0KIrgfoX8DwqkB6c_Prfy5D7fFtHogJo2JFPgD-nV5Jn8pZmId8uaC-K2vZ9Xoh_YGGn1lMiRGf2AR27_KBoBHzKNV5OeM9CZQ62qeMPb_n379ZhNtRLH9qk2UWY4J3KYuZ0VcDgxVeKRUyW4ee9e0svLCAMevsEY-F8QN7SwA8SY4OxJRguKm0hHNIOQM067MsMUFea39fF3VzW_VMx9_Ztv0HNXbT53_0esMxRmsog6821MqyUrSIZkkVLqBHDHgQpyAOqdkhiG20DA2s2mApnC-2vgLCWlsf20myxQ3oR7cfJnUUEnzix4HKDuBbaF1Zo9KDS4G7bjWN2IdxphaJvA7RfHgXFjgIwdyCvuA52lWjj56nBV43lBhHQw2yRrsM53xwsWCL3yse8J36HQpSLYsTJn1sVbWxJkbkM6AvnmUPOxn_xfP6PHErMC7V-t-rZiLAKw.wKc_fQloSZhRrqADLmmREg} }
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:01:30 pm</td>
+        <td>12:34:35 pm</td>
         <td>
           RESPONSE:
 {
@@ -278,8 +278,8 @@
             "success": true,
             "message": "Tokens refreshed successfully",
             "data": {
-                "accessToken": "eyJraWQiOiI2ZXdha3Jlb0ZkNE1ySjZkZWd1bW9WSWFkR1kzRFVhY01jc0NiNTVSWEVrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NGQ4MTRiOC00MGQxLTcwN2QtZjljNC1mMDJkNzA3NjgzY2YiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9hZmRwRGFpYXQiLCJjbGllbnRfaWQiOiIxZDR2bnVlbGF0YWRvcWJjdmgxbXZjN3BtYyIsIm9yaWdpbl9qdGkiOiJjNTM2Njc5Mi1iNzExLTQ2NWYtYmFjMS1hMzFhMTA4NDlhMGIiLCJldmVudF9pZCI6ImIxNjU4YzhlLWU2MzgtNDNjZS04YTU5LTA2NGM0MGFjZTJmNCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NzQ4OTE4ODgsImV4cCI6MTc3NDg5MjE5MCwiaWF0IjoxNzc0ODkxODkwLCJqdGkiOiJiOTEwMjM2OS1iNTFhLTQyNTUtYjkyZC1hMWQ0YjAyMDhiM2QiLCJ1c2VybmFtZSI6Ijk0ZDgxNGI4LTQwZDEtNzA3ZC1mOWM0LWYwMmQ3MDc2ODNjZiJ9.I7Yf5ghWVBfGomUK49VkP9EeN0UppGAkzQpaMmINP4TErYEGUnug7wB1Jih20N-pGqZpZxAJ3MQ15PBY-f5UEeHg-RdxacLnFGtGPzBEZ76rQ4krlLA68PznbqthhJGUu78uAlDOPcZpLxUw1pib-bZQranQu21KhO10dj2u_uSLWymJDXYvmUhkm18lp06fcC5fXo1BXVPmvZjoJJR3XokvxClhzdp5-jom8gtiDNlhTtfR79k72LUIw6WPU9Nv48mLv1wbcMZbBb2fzBeLpUK1PUjtMS56plKXx5OH9sdxR3YCDCYgCz1wnSGAuGycbfrBLtnDoeUtbBaXUn8lVg",
-                "refreshToken": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.rLsL0twP-9_iGvlkc-PT8a48UAcjg4X4QXorfGcdBQspYB57BBObr3Fg8rf242OmwLd6gbYBEQ6goT9rZ4bPIZkLsQxzquwLvzk6roLxmPeEzSBJrixYzyFnt6U1yOrdd5x4XUEsQZo2Yuai09H--f_Hd9o2U3RVXKQBPzcwO5ZbDKZKtZ6dCfdH3fDHpkdHg06L-Cowo-17LcfNpD9RV8qxSXjRMjz-YaIeD1N5VsGN7bBt4Q9wef095bvTNXLLsIsG62sgIk8MLqr0Qzft6JndGBZx2bvCBvjf0AEj4jHpqsMf0xw6W_iS4SVExsJLGmthXgEg1pqBtdGh3XYAow._ef754bEFUv-2beX.njdFq86KNfe8H6aDGTwStEqbevrQH00aT0drUmssYiwn_6fNdCOiLkeHDrghvoskFCHSqfOO8XQDXC62OVJsA2PiDvLScT2PoYx-C6aDIWct6_ScXRXGYHtOUNAJ56R_vYdBb6r5SPhnUCFxx5JMUSDJkCEg_ijhj-1dNGyMUsn1Aevivz_OLQ3q0-6wKi95na_AMeDhMTOFnA2bLaEQ-QfIw6lW3QIxAm6M-Zqaod90mclpODUIhrtJO-7yxEcePjT2fLixLDWF32MEfsR-94rPf-1iB54umq-AOLpsUJXKyAuHJedA65SivylEh9k6MWCPPWguiLEPp8sZ2cZMRZ1oDdQRV0K7fb7sVodK8sFeBp9wu2vkFQJBFxDJKVgqr4aQiR_JaYknBlr5LoOk5YkemRq-L4Iuk6GH4ZxJTMxxQxljamIV0mELVydhB3RO8pjyBoTmhYbbN1HVcdgzvTlZfsS1GgQ0rKZnpD4aJ7T9GHH9C0Il9Px2YljbIxPyHTO08KxWNIGuftvKlm9oyKiH1TbZMGepCBqgsKqip1uq3ooeiDIOEW03Q6dRN3QtSQecShrt7nITO7ls8GlWNS-eaSMwXHmlMwLbgdA1UegWqBZn5C4Al3idXndpnDSJcC3Eq176JUYIDEd-r_ZGlS6RwkXT3u44FyagUhbBGgdKkWZzw5-GmixzmuBM47qOmYwBRdCkQWcZGoA1E2g6HKM7yu9pHyHdZ-g8H-dn0ehZUOP3SL1NV1Yx5m3m2rDQltmzyPcdgW31hxBU4in1dKb5gfPvyKCwuTWixaADCDBZGIzNHXI7jMTGPGGZNwXi7TZWhsZQFQtjbZCYow3Hvarup5Q-FWS1tW8ErXMtgdIrE6-ukLprdv9GeZvQIM0OmuOBK6uA6mPkvL8WS6QztSw6BtLheVXCfJji_eyqcuCA8EnQjqi5A7VGgkSo5i0RQU83HCrHD72_MK-7XjiShH6Zle3UPABSe1c86ezsVkAuXNE-5zzw54Ys8wwtBbZz5BxWQYEDh1QGJoR2hPDmAqaOsKHVtCAdGuXsKv798zFMFRu2qSID9MQfAS2dOFbWvmhA8TkJm_n-HTvZroWBakhnNjhY5YfdGECL6J1GwJxJ27vH89fED6g5bucvEPRjnMrFz5JA-E9QMIhqThZLaNiFtUndB3guvCAWsqBtUKTEko43eJS1MSSzxTF8qSARPiBlTyVoK6uPx-w_p85NqQM5es0r2MRvzQTbNNM1nQWJFvckJRZIV5YLRMb_udprO0QK4ZNJ56wn5La6PcFAbOmX93NgVqWQ0c4trqmGI-Bw-i21iZM04hU2XV4.JdRg6Qyem29WQWQ9K6qlcQ"
+                "accessToken": "eyJraWQiOiI2ZXdha3Jlb0ZkNE1ySjZkZWd1bW9WSWFkR1kzRFVhY01jc0NiNTVSWEVrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NGQ4MTRiOC00MGQxLTcwN2QtZjljNC1mMDJkNzA3NjgzY2YiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9hZmRwRGFpYXQiLCJjbGllbnRfaWQiOiIxZDR2bnVlbGF0YWRvcWJjdmgxbXZjN3BtYyIsIm9yaWdpbl9qdGkiOiI5OGVhMGM0OC00MTU2LTQyODItOGEwMC0xZmMwYTQwMTYyODUiLCJldmVudF9pZCI6IjVhMTU5NWMzLWExZGQtNDlhYi1iYzRhLTg2MWZjNTJiMGMyNCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NzQ5NDA2NzMsImV4cCI6MTc3NDk0MDk3NCwiaWF0IjoxNzc0OTQwNjc0LCJqdGkiOiI2NWIxYWVkNy1hOWY1LTRjNTMtOGFlZS03ODY2Y2U0NzUyY2QiLCJ1c2VybmFtZSI6Ijk0ZDgxNGI4LTQwZDEtNzA3ZC1mOWM0LWYwMmQ3MDc2ODNjZiJ9.o-UKd0_zgf0ubziSTWbJEyXOKcezKJrt4dfbp3bOmpVzaJDOUD3gVjl8s5fLA_XpgZzF0_DmUY0uy8VZvzt0uExpm0O3Xai2Naa1_F0tNJw8VjSBVTlIautlqMSBW5U6ta39LMu07vMo5rvFKI_6cvdEq8AgFgaHp9xsg1bEj6UFexMv0sgZf_7kBfvyErv4QCOO3Ximya7kOQ5ZFM5yoPVjYDk4F4K_GME0dBYIg32HRhlBRgo2mchsT6Qo0m4JVAo5Bb3W8dRYVlkvY1SGOiDx5d4RwXlA0nvDK6ArrOosyGjKwk3iDXIE7ePzOJ1NDneFWSbWPEXSHiWoRmiRZg",
+                "refreshToken": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.SmRWj5ZkEG_YjiDziSmOVqdBqxjIxArO9G_DNet4Ily9SWQX3fpnLKbCjXXHRc5PldCKtjuVXFJgKdAt7lQ2vX0e25tRV7mHHzhJBOXQWaNK6Q3fkh6em5hl9zCHaxQEFkIFUN3X4o4CzgffgUsC5S92Dk-N6uJeEPVL9ZfyijDxPg3JKaqYcZUDOein8nf3FbxszTrgdHko8R0fa8vLAyo_w3GiYPtHZyCDaEh3jdIITfHnXu-Gof9QwnuT_GQ819r5wfuhKjIURJw2gSRjqT3I_90ICKzZBHgLd2Ki13Bob7NPbAvbg3EOHnavt4GUuxJB2kie-dWen7N5IRl0Jg.KpbVQxbPRYDSrcvZ.3EUI2l9sM0-8XkpYsksljPtxHbtVytCFyAi6-Yyxjn4VmKOGisZTyhsvFv_-sM_dWAQKIhNNlrn4sMFNDb0fbXlHin14V_D9l4YWcB_JNlKbfobB1zdkefKwJ62e3vYmt0AHTRKQNBAZYWnaMYvegqLvab8id4PUDC_kcasCCDCskVpMBRFVZofopD4zTzVTHYMorUKke4PKQCLgANrC_YVa0umBd4Uf3UFDLwiWoe-SsB03sHXDsnorG38azk8k9mucABtxhAqmzEyeXPWxbqw-xlAIcngxkDWAwjhg0U7PxsGTqliyD2p4Crgq2iQr6haMlLr1pWHzs_RyX998M1OoOkyuFhBdK_SFbyxB9ehjcjUP8ROnrjcAfHrPXE361CyljFvT0A6FJH_-DIiVjFCcKqopR3WFufJcjCYoHTtJOHbJtt7cM9xurgPg3DVvvkFanJOy1RPouJUZcrsmDyxndXJvOiovr9Nf8sHskIy1pVUxG-EN88IqntcPOLgmP60GHHYMq3IYnvNlbmsqjIB95NjtZjqysFCzZHGoqIRc0wDcjyWO78EDERAaCxfDQjz9-ldnxI_Eniq3K5mjgXO81kD5f-GDmll47y2qhCcRKL81TiL5tU8QnavetkSomczGUTBTecr7Kqquyo-KNmBz8VXijQKBp2xY-vR-HayAMqum2mpCih2Xsc5_2l2kLupGPXdANC38N2jqnnT9YUtOC0NfWJhESnOG8N9UAOAtEpvjXkqTI8qkZoYcocG5-SUtSjlxRsHK0uRDZEIy9VXuRB0QNBhU5-fPpO1qUWyTos5klYmSRbJO5f4_RJnEhObbnG0pWL6V82PuQR3_dwVKRvjpySUiDaPMJnKaa8CbHO-iLt0KIrgfoX8DwqkB6c_Prfy5D7fFtHogJo2JFPgD-nV5Jn8pZmId8uaC-K2vZ9Xoh_YGGn1lMiRGf2AR27_KBoBHzKNV5OeM9CZQ62qeMPb_n379ZhNtRLH9qk2UWY4J3KYuZ0VcDgxVeKRUyW4ee9e0svLCAMevsEY-F8QN7SwA8SY4OxJRguKm0hHNIOQM067MsMUFea39fF3VzW_VMx9_Ztv0HNXbT53_0esMxRmsog6821MqyUrSIZkkVLqBHDHgQpyAOqdkhiG20DA2s2mApnC-2vgLCWlsf20myxQ3oR7cfJnUUEnzix4HKDuBbaF1Zo9KDS4G7bjWN2IdxphaJvA7RfHgXFjgIwdyCvuA52lWjj56nBV43lBhHQw2yRrsM53xwsWCL3yse8J36HQpSLYsTJn1sVbWxJkbkM6AvnmUPOxn_xfP6PHErMC7V-t-rZiLAKw.wKc_fQloSZhRrqADLmmREg"
             },
             "errors": null
         }
@@ -289,7 +289,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:01:30 pm</td>
+        <td>12:34:35 pm</td>
         <td>
           Test Passed
         </td>
@@ -313,13 +313,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 30, 2026 11:01:20 pm</h3>
+<h3>Mar 31, 2026 12:34:28 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 30, 2026 11:01:30 pm</h3>
+<h3>Mar 31, 2026 12:34:35 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -389,7 +389,7 @@
 </div></div>
 <script>
 var timeline = {
-"login":5.87,"verifyOtp":1.879,"refreshToken":1.413
+"login":3.261,"verifyOtp":1.663,"refreshToken":1.33
 };
 </script>
 <div class="row">
