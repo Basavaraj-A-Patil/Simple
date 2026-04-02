@@ -9,6 +9,7 @@ import com.aventstack.extentreports.ExtentTest;
 import utils.EmailUtil;
 import utils.ExtentManager;
 import utils.PdfReportUtil;
+import utils.TestStatusManager;
 
 public class TestListener implements ITestListener {
 
@@ -20,6 +21,7 @@ public class TestListener implements ITestListener {
     public void onTestStart(ITestResult result) {
         ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
         test.set(extentTest);
+        TestStatusManager.setPass();
         startTime = System.currentTimeMillis();
     }
     
@@ -30,21 +32,24 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         test.get().pass("Test Passed");
+        TestStatusManager.setPass();
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         test.get().fail("Test Failed: " + result.getThrowable());
+        TestStatusManager.setPass();
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         test.get().skip("Test Skipped");
+        TestStatusManager.setSkip();
     }
 
     @Override
     public void onFinish(org.testng.ITestContext context) {
-
+    	TestStatusManager.clear();
         extent.flush();
 
         int passed = context.getPassedTests().size();
@@ -57,7 +62,7 @@ public class TestListener implements ITestListener {
                 "Failed: " + failed + "\n" +
                 "Skipped: " + skipped;
 
-        PdfReportUtil.generateReport("reports/TestReport.pdf");
+        PdfReportUtil.generateReport("reports/SimpleConnectAPITestReport.pdf"); 
         
         EmailUtil.sendEmailWithAttachment(); 
     }

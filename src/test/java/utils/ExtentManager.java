@@ -12,10 +12,10 @@ public class ExtentManager {
         if (extent == null) {
 
             ExtentSparkReporter reporter =
-                    new ExtentSparkReporter("reports/ExtentReport.html");
+                    new ExtentSparkReporter("reports/SimpleConnectAPIReport.html");
 
-            reporter.config().setReportName("API Automation Report");
-            reporter.config().setDocumentTitle("Test Results");
+            reporter.config().setReportName("Simple Connect API Automation Report");
+            reporter.config().setDocumentTitle("Simple Connect API Test Results");
 
             extent = new ExtentReports();
             extent.attachReporter(reporter);

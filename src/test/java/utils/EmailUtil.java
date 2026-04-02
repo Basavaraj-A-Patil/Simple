@@ -31,24 +31,29 @@ public class EmailUtil {
 
         try {
 
-            // 🔹 Get Test Results
+            // Get Test Results
             List<TestResultPdf> results = TestResultPdf.results;
 
             int total = results.size();
             int passed = 0;
             int failed = 0;
+            int skipped = 0;
 
             for (TestResultPdf result : results) {
                 if ("PASS".equalsIgnoreCase(result.status)) {
                     passed++;
-                } else {
-                    failed++;
+                } 
+                else if ("FAIL".equalsIgnoreCase(result.status)) {
+                	 failed++;
+				}
+                else {
+                   skipped++;
                 }
             }
 
-            String executionStatus = (failed > 0) ? "FAILED" : "PASSED";
+            String executionStatus = (failed > 0) ? "FAILED" : (passed > 0) ? "PASSED" : "SKIPPED";
 
-            // 🔹 Time + Duration
+            // Time + Duration
             long endTime = System.currentTimeMillis();
             long durationMillis = endTime - listeners.TestListener.startTime;
 
@@ -88,10 +93,10 @@ public class EmailUtil {
             		Message.RecipientType.CC,
             		InternetAddress.parse(ccEmail));
 
-            // 🔹 Subject
+            // Subject
             message.setSubject("Simple Connect API : Execution Complete Notification - " + executionStatus);
 
-            // 🔥 HTML BODY
+            // HTML BODY
             String body =
                     "<html>" +
                     "<body style='font-family: Arial, sans-serif;'>" +
@@ -118,12 +123,14 @@ public class EmailUtil {
                     "<th>Total Tests</th>" +
                     "<th>Passed</th>" +
                     "<th>Failed</th>" +
+                    "<th>Skipped</th>" +
                     "</tr>" +
 
                     "<tr>" +
                     "<td>" + total + "</td>" +
                     "<td style='color:green; font-weight:bold;'>" + passed + "</td>" +
                     "<td style='color:red; font-weight:bold;'>" + failed + "</td>" +
+                    "<td style='color:orange; font-weight:bold;'>" + skipped + "</td>" +
                     "</tr>" +
 
                     "</table>" +
@@ -143,12 +150,12 @@ public class EmailUtil {
 
             // 🔹 Attach PDF
             MimeBodyPart pdfAttachment = new MimeBodyPart();
-            pdfAttachment.attachFile(new File("reports/TestReport.pdf"));
+            pdfAttachment.attachFile(new File("reports/SimpleConnectAPITestReport.pdf"));
             multipart.addBodyPart(pdfAttachment);
 
             // 🔹 Attach Extent Report
             MimeBodyPart htmlAttachment = new MimeBodyPart();
-            htmlAttachment.attachFile(new File("reports/ExtentReport.html"));
+            htmlAttachment.attachFile(new File("reports/SimpleConnectAPIReport.html"));
             multipart.addBodyPart(htmlAttachment);
 
             message.setContent(multipart);

@@ -5,7 +5,6 @@
     <classes>
       <class name="tests.AuthTest">
         <methods>
-          <include name="refreshToken"/>
           <include name="verifyOtp"/>
         </methods>
       </class> <!-- tests.AuthTest -->

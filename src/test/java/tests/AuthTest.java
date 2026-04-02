@@ -18,9 +18,9 @@ import utils.AssertUtils;
 @Listeners(TestListener.class)
 public class AuthTest {
 	static String baseUrl = ConfigManager.get("baseUrl");
-	static String refreshToken = null;
-	static String accessToken = null;
-	static String userId = null;
+	public static String refreshToken = null;
+ 	public static String accessToken = null;
+	public static String userId = null;
 
 	@Test(priority = 1)
 	public static void login() {

@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Simple Connect API Test Results</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Simple Connect API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 2, 2026 05:32:54 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">login</p>
+            <p class="text-sm">
+              <span>5:32:54 pm</span> / <span>00:00:03:288</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">login</h5>
+<span class='badge badge-success'>04.02.2026 5:32:54 pm</span>
+<span class='badge badge-danger'>04.02.2026 5:32:57 pm</span>
+<span class='badge badge-default'>00:00:03:288</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:32:54 pm</td>
+        <td>
+          Calling API: login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:32:54 pm</td>
+        <td>
+          <b>Request:</b>{ query: mutation Login($mobile: String!, $whatsappConsent: Boolean!, $loginSource: loginSource) { login(mobile: $mobile, whatsappConsent: $whatsappConsent, loginSource: $loginSource) { success message errors { errorCode message statusCode } } }, variables: {mobile=+919071571067, loginSource=MOBILE, whatsappConsent=true} }
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:32:57 pm</td>
+        <td>
+          <b>Response:</b>{
+    "data": {
+        "login": {
+            "success": true,
+            "message": "OTP sent successfully. Please verify OTP to complete login.",
+            "errors": null
+        }
+    }
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:32:57 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyOtp</p>
+            <p class="text-sm">
+              <span>5:32:57 pm</span> / <span>00:00:01:992</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyOtp</h5>
+<span class='badge badge-success'>04.02.2026 5:32:57 pm</span>
+<span class='badge badge-danger'>04.02.2026 5:32:59 pm</span>
+<span class='badge badge-default'>00:00:01:992</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:32:57 pm</td>
+        <td>
+          Calling API: verifyOtp
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:32:57 pm</td>
+        <td>
+          <b>Request:</b>{ query: mutation VerifyOtp($mobile: String!, $otp: String!) { verifyOtp(mobile: $mobile, otp: $otp) { success message data { accessToken refreshToken userId }  errors { errorCode message statusCode } } }, variables: {otp=3289, mobile=+919071571067} }
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:32:59 pm</td>
+        <td>
+          <b>Response:</b>{
+    "data": {
+        "verifyOtp": {
+            "success": true,
+            "message": "OTP verified and user logged in successfully.",
+            "data": {
+                "accessToken": "eyJraWQiOiI2ZXdha3Jlb0ZkNE1ySjZkZWd1bW9WSWFkR1kzRFVhY01jc0NiNTVSWEVrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NGQ4MTRiOC00MGQxLTcwN2QtZjljNC1mMDJkNzA3NjgzY2YiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9hZmRwRGFpYXQiLCJjbGllbnRfaWQiOiIxZDR2bnVlbGF0YWRvcWJjdmgxbXZjN3BtYyIsIm9yaWdpbl9qdGkiOiIzMGMxMmZiMS02NDc4LTQwODItYmMyOS0xNDgwNDM2MWMyYTciLCJldmVudF9pZCI6IjhiZGNmNzk5LWRjNDAtNDA3OC1hNzU2LWMyNmE1YWM3MmFmYSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NzUxMzEzNzgsImV4cCI6MTc3NTEzMTY3OCwiaWF0IjoxNzc1MTMxMzc4LCJqdGkiOiI1NWU5NWZmYS04OGE1LTRjOWEtODI2Ny03OGUyZmY1NTIzZDQiLCJ1c2VybmFtZSI6Ijk0ZDgxNGI4LTQwZDEtNzA3ZC1mOWM0LWYwMmQ3MDc2ODNjZiJ9.iQfzm43yJPn5CCwmGV-yt5dTo-J8C1xuTTE3qiYbmHGyatQdHGLCA2Mdhu6aTJtrYrsxulvrNXP4PrIes3KWSEJ9lpzuW5ejNIv3OKQ3PYeRBSnxjB7sGqlsMW-JoLsiMxwns1jLFBFNPLJVAd_dJFMn7yPcQwwWhE_D7KGkZO3CuQCj0dAXBlR2ZgfuXufnJvUrXA3orE8kcC0Ou_ywStt8U4eWfuAc3U3hQbheAQ0eanfoAT1Uguebp_gmemh502l8BWijitQ1pLVFORsXbKiZ3N9xVs-vgYjOrkjlEu2uS4khTncwtP2x_A863VW4QCFaC6LhaQU8V7EzehS6AQ",
+                "refreshToken": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.w-E0-L89hplKr_MASNaRsdQv12Vv_klDKOViyx2JBhMhCNF3ULsVuv6OAxN1Uzho_DjqJca0vcxQl6WqoT3fRJ3n6aEtdLu30RJHSjWAlt5DCUxgXB0YOZjRTDKfGUnP70KZvm6isoffVJrcM9KDFppn_6JMJ69u84r98xTeeeeWmxJOhNTGju8X1hhHO1YaBbwDmqPm9pmPYBXpcsJvXfXGo54QoJNpxVl74rW53pCtPcXAnxTrFdFHW-QOcoo-dQ7XuxTc9DClTk7ikC9UxoDKVbe2KNJvxw08-3XIAOdx151LzV1wR25MN16YP2X9wsVUaCbRCNX7M82V8ZWk_Q.SFbdq3CXZSCzDixJ.noHmDm7kHOtWt6rv5oA-KUsvR6eFTKT1MMiMCne9bzyDku9f5wNNnF1-dhApK6xBpZvMvrwkPbBL6KsaokLb6qJG1QfMG9gYbtpuJUKw_OjZJ_jAmSIZ1ALyuQXVHQENkkklnLPq8bFwymi2x_krKIvAVya7mI0F33yljn8o_zmImcikt9YDUw48zH536pro3xLieTPbBVmVH5UwOWjVLdIHS3MjVGauK9eIJDH1bZEqco8aU42lIGoIMudmgvvXqtH23bHCeJ68cBSnC5dOi3WZnVG2iwBz_DuF24lABfYs9w42hYUMXkOQrhAEFOgIZoOcgc7wFwGNql8EpdtQE6hc6aZowUy4TnLU7BQnb5S8FbisdHLb5FYGqj5cNO6NtP0QbOGaQOZj9vSj3_oyvh5SHGkvBatG49yfX7Dbuw7wyGwV9XuriV5HCPCSL0lh7g5aIEBfn8mRQVL_I0-oZKF9_n3XDre3h7T7Et2404Ei8mZ4KWM5TvKsGiPzyFMXQaIwULFS062H9ZMr72gu7L6PKiP5SRRk-iO7sQkHEeqmLOTI4flS8Jf8fZU9MdkT1HPpBgZODliwbWnKohquYqBoDk3TMFgHA7wGjcrZLtzvcOEocQvie3vWB_qTjNbUQNljJP4bm9MKcS4I312h9aVSBPXYSDTcdOuLGmsBwBzAMBvdyCvSx9RfRLm29QhaaaCcLwA8nyVtWUL52_OK027BWM8IHiNKkVJZl2CLPA77nGRwAvUsWb0uTMVl26oaX8VLuivB1L2zW18fXUYz2Bw_cD9mCZj6MyEkHlyUUyot5Bv4st8cWtFrR8rVfx-CxwzKS69LmE4ScMvXgulWXmq0IUrAQ0q-cLPgXleVlxKHNzq5IPPh1hTfKsBQPB2oHngOtPGpHwx-I59odLhfnqVvn0wT436FqsiGNgVsryyaoP1RRf5_qavSWPhrvxot2Qs7JryB9CXOVBSFvWpLOfsYTQl0Oi7poe8tsS9REsftyHbeAaQ4FmcSzn_kvE7qMAJF8yFs9yY_wZa2hx-gpiemjhUk6MMhkNEPlX-kTbaD5BzlGc5b0SN-6RLI9LHewW1waQ3hFWTmI0q-KYCvMDvYN0DSReaN2wkWKrCPzp3m5fH2tCG7A6f26k6TUhZXqh828FX5_EGZT7uIXEa-2EF_hRcgGAdJJDygxByFGF9l1e-mgTueH30aoV9JA6El0PIROeccK5c6VVaSs51L-lzrvlmUC35S_7dJvA5yaCtrIzaGnrHshv0JzXl-4rQnLFv-Iu1NyuzvlItNJatGhBYSQijP2VL7htl6Quwbl08I8O3RNcbNLWLNd7U.458UPPtX6rhur2QnIWWsTg",
+                "userId": "c49f1cd9-9a4c-49d7-a517-18d6da5215af"
+            },
+            "errors": null
+        }
+    }
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:32:59 pm</td>
+        <td>
+          Test Failed: java.lang.AssertionError: Status code mismatch expected [201] but found [200]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">refreshToken</p>
+            <p class="text-sm">
+              <span>5:32:59 pm</span> / <span>00:00:01:383</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">refreshToken</h5>
+<span class='badge badge-success'>04.02.2026 5:32:59 pm</span>
+<span class='badge badge-danger'>04.02.2026 5:33:00 pm</span>
+<span class='badge badge-default'>00:00:01:383</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:32:59 pm</td>
+        <td>
+          Calling API: refreshToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:32:59 pm</td>
+        <td>
+          <b>Request:</b>{ query: mutation RefreshToken($refreshToken: String!, $userId: String!) { refreshToken(refreshToken: $refreshToken, user_id: $userId) { success message data { accessToken refreshToken }  errors { errorCode message statusCode } } }, variables: {userId=c49f1cd9-9a4c-49d7-a517-18d6da5215af, refreshToken=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.w-E0-L89hplKr_MASNaRsdQv12Vv_klDKOViyx2JBhMhCNF3ULsVuv6OAxN1Uzho_DjqJca0vcxQl6WqoT3fRJ3n6aEtdLu30RJHSjWAlt5DCUxgXB0YOZjRTDKfGUnP70KZvm6isoffVJrcM9KDFppn_6JMJ69u84r98xTeeeeWmxJOhNTGju8X1hhHO1YaBbwDmqPm9pmPYBXpcsJvXfXGo54QoJNpxVl74rW53pCtPcXAnxTrFdFHW-QOcoo-dQ7XuxTc9DClTk7ikC9UxoDKVbe2KNJvxw08-3XIAOdx151LzV1wR25MN16YP2X9wsVUaCbRCNX7M82V8ZWk_Q.SFbdq3CXZSCzDixJ.noHmDm7kHOtWt6rv5oA-KUsvR6eFTKT1MMiMCne9bzyDku9f5wNNnF1-dhApK6xBpZvMvrwkPbBL6KsaokLb6qJG1QfMG9gYbtpuJUKw_OjZJ_jAmSIZ1ALyuQXVHQENkkklnLPq8bFwymi2x_krKIvAVya7mI0F33yljn8o_zmImcikt9YDUw48zH536pro3xLieTPbBVmVH5UwOWjVLdIHS3MjVGauK9eIJDH1bZEqco8aU42lIGoIMudmgvvXqtH23bHCeJ68cBSnC5dOi3WZnVG2iwBz_DuF24lABfYs9w42hYUMXkOQrhAEFOgIZoOcgc7wFwGNql8EpdtQE6hc6aZowUy4TnLU7BQnb5S8FbisdHLb5FYGqj5cNO6NtP0QbOGaQOZj9vSj3_oyvh5SHGkvBatG49yfX7Dbuw7wyGwV9XuriV5HCPCSL0lh7g5aIEBfn8mRQVL_I0-oZKF9_n3XDre3h7T7Et2404Ei8mZ4KWM5TvKsGiPzyFMXQaIwULFS062H9ZMr72gu7L6PKiP5SRRk-iO7sQkHEeqmLOTI4flS8Jf8fZU9MdkT1HPpBgZODliwbWnKohquYqBoDk3TMFgHA7wGjcrZLtzvcOEocQvie3vWB_qTjNbUQNljJP4bm9MKcS4I312h9aVSBPXYSDTcdOuLGmsBwBzAMBvdyCvSx9RfRLm29QhaaaCcLwA8nyVtWUL52_OK027BWM8IHiNKkVJZl2CLPA77nGRwAvUsWb0uTMVl26oaX8VLuivB1L2zW18fXUYz2Bw_cD9mCZj6MyEkHlyUUyot5Bv4st8cWtFrR8rVfx-CxwzKS69LmE4ScMvXgulWXmq0IUrAQ0q-cLPgXleVlxKHNzq5IPPh1hTfKsBQPB2oHngOtPGpHwx-I59odLhfnqVvn0wT436FqsiGNgVsryyaoP1RRf5_qavSWPhrvxot2Qs7JryB9CXOVBSFvWpLOfsYTQl0Oi7poe8tsS9REsftyHbeAaQ4FmcSzn_kvE7qMAJF8yFs9yY_wZa2hx-gpiemjhUk6MMhkNEPlX-kTbaD5BzlGc5b0SN-6RLI9LHewW1waQ3hFWTmI0q-KYCvMDvYN0DSReaN2wkWKrCPzp3m5fH2tCG7A6f26k6TUhZXqh828FX5_EGZT7uIXEa-2EF_hRcgGAdJJDygxByFGF9l1e-mgTueH30aoV9JA6El0PIROeccK5c6VVaSs51L-lzrvlmUC35S_7dJvA5yaCtrIzaGnrHshv0JzXl-4rQnLFv-Iu1NyuzvlItNJatGhBYSQijP2VL7htl6Quwbl08I8O3RNcbNLWLNd7U.458UPPtX6rhur2QnIWWsTg} }
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:33:00 pm</td>
+        <td>
+          <b>Response:</b>{
+    "data": {
+        "refreshToken": {
+            "success": true,
+            "message": "Tokens refreshed successfully",
+            "data": {
+                "accessToken": "eyJraWQiOiI2ZXdha3Jlb0ZkNE1ySjZkZWd1bW9WSWFkR1kzRFVhY01jc0NiNTVSWEVrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NGQ4MTRiOC00MGQxLTcwN2QtZjljNC1mMDJkNzA3NjgzY2YiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9hZmRwRGFpYXQiLCJjbGllbnRfaWQiOiIxZDR2bnVlbGF0YWRvcWJjdmgxbXZjN3BtYyIsIm9yaWdpbl9qdGkiOiIzMGMxMmZiMS02NDc4LTQwODItYmMyOS0xNDgwNDM2MWMyYTciLCJldmVudF9pZCI6IjhiZGNmNzk5LWRjNDAtNDA3OC1hNzU2LWMyNmE1YWM3MmFmYSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NzUxMzEzNzgsImV4cCI6MTc3NTEzMTY4MCwiaWF0IjoxNzc1MTMxMzgwLCJqdGkiOiI0ZDYyYzhmYy01MDE1LTQ5N2EtOTU3Yy0xZGMxZGFkYzVjNjciLCJ1c2VybmFtZSI6Ijk0ZDgxNGI4LTQwZDEtNzA3ZC1mOWM0LWYwMmQ3MDc2ODNjZiJ9.rm-MIpOB4xnP1uspZx5XLXzIRaHE_qhPMurc5iz5DyKa5WmY8lNor3PFae93D8S5UAkBfYPzykACmmC52Qod_fYT5fLJP-ZfYxzZl2HsBhcYgGiVvzKMsfZh5gf1BG77IZ46WJcrhA_E6zX7N4Ljl47El6Y8wsMV87NBCbDNwsyIZbARJB-63m1n_4skC3OfRd9NVVvyyh9MjzEV5A2W3VvxWkDgNo6w_rqdWMSlZgCx-MBVS9XR5vyRSfWl5ZJtt1WTWtIGh-U4SEBkFPrJPhv2obpeW_zC36YSi83tDeExBFgypBZDBZG6o4iwf1NpcTew6sTFwrFCXpLr_Rneug",
+                "refreshToken": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.w-E0-L89hplKr_MASNaRsdQv12Vv_klDKOViyx2JBhMhCNF3ULsVuv6OAxN1Uzho_DjqJca0vcxQl6WqoT3fRJ3n6aEtdLu30RJHSjWAlt5DCUxgXB0YOZjRTDKfGUnP70KZvm6isoffVJrcM9KDFppn_6JMJ69u84r98xTeeeeWmxJOhNTGju8X1hhHO1YaBbwDmqPm9pmPYBXpcsJvXfXGo54QoJNpxVl74rW53pCtPcXAnxTrFdFHW-QOcoo-dQ7XuxTc9DClTk7ikC9UxoDKVbe2KNJvxw08-3XIAOdx151LzV1wR25MN16YP2X9wsVUaCbRCNX7M82V8ZWk_Q.SFbdq3CXZSCzDixJ.noHmDm7kHOtWt6rv5oA-KUsvR6eFTKT1MMiMCne9bzyDku9f5wNNnF1-dhApK6xBpZvMvrwkPbBL6KsaokLb6qJG1QfMG9gYbtpuJUKw_OjZJ_jAmSIZ1ALyuQXVHQENkkklnLPq8bFwymi2x_krKIvAVya7mI0F33yljn8o_zmImcikt9YDUw48zH536pro3xLieTPbBVmVH5UwOWjVLdIHS3MjVGauK9eIJDH1bZEqco8aU42lIGoIMudmgvvXqtH23bHCeJ68cBSnC5dOi3WZnVG2iwBz_DuF24lABfYs9w42hYUMXkOQrhAEFOgIZoOcgc7wFwGNql8EpdtQE6hc6aZowUy4TnLU7BQnb5S8FbisdHLb5FYGqj5cNO6NtP0QbOGaQOZj9vSj3_oyvh5SHGkvBatG49yfX7Dbuw7wyGwV9XuriV5HCPCSL0lh7g5aIEBfn8mRQVL_I0-oZKF9_n3XDre3h7T7Et2404Ei8mZ4KWM5TvKsGiPzyFMXQaIwULFS062H9ZMr72gu7L6PKiP5SRRk-iO7sQkHEeqmLOTI4flS8Jf8fZU9MdkT1HPpBgZODliwbWnKohquYqBoDk3TMFgHA7wGjcrZLtzvcOEocQvie3vWB_qTjNbUQNljJP4bm9MKcS4I312h9aVSBPXYSDTcdOuLGmsBwBzAMBvdyCvSx9RfRLm29QhaaaCcLwA8nyVtWUL52_OK027BWM8IHiNKkVJZl2CLPA77nGRwAvUsWb0uTMVl26oaX8VLuivB1L2zW18fXUYz2Bw_cD9mCZj6MyEkHlyUUyot5Bv4st8cWtFrR8rVfx-CxwzKS69LmE4ScMvXgulWXmq0IUrAQ0q-cLPgXleVlxKHNzq5IPPh1hTfKsBQPB2oHngOtPGpHwx-I59odLhfnqVvn0wT436FqsiGNgVsryyaoP1RRf5_qavSWPhrvxot2Qs7JryB9CXOVBSFvWpLOfsYTQl0Oi7poe8tsS9REsftyHbeAaQ4FmcSzn_kvE7qMAJF8yFs9yY_wZa2hx-gpiemjhUk6MMhkNEPlX-kTbaD5BzlGc5b0SN-6RLI9LHewW1waQ3hFWTmI0q-KYCvMDvYN0DSReaN2wkWKrCPzp3m5fH2tCG7A6f26k6TUhZXqh828FX5_EGZT7uIXEa-2EF_hRcgGAdJJDygxByFGF9l1e-mgTueH30aoV9JA6El0PIROeccK5c6VVaSs51L-lzrvlmUC35S_7dJvA5yaCtrIzaGnrHshv0JzXl-4rQnLFv-Iu1NyuzvlItNJatGhBYSQijP2VL7htl6Quwbl08I8O3RNcbNLWLNd7U.458UPPtX6rhur2QnIWWsTg"
+            },
+            "errors": null
+        }
+    }
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:33:00 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 2, 2026 05:32:54 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 2, 2026 05:33:00 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'>
+<b>2</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='33%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='16%'><b>2</b> events passed</small></div>
+<div>
+<small data-tooltip='8%'><b>1</b> events failed,
+<b data-tooltip='%'>9</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"login":3.288,"verifyOtp":1.992,"refreshToken":1.383
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 2,
+failEvents: 1,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 9
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
